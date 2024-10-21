@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #007bff;
+    background: #002147;
     color: #fff;
     padding: 2px 10px;
 }
@@ -110,7 +110,7 @@ header {
 footer {
     text-align: center;
     padding: 2px;
-    background: #333;
+    background: #002147;
     color: white;
 }
 .feature {

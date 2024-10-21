@@ -28,7 +28,7 @@ class Account extends Model implements CanResetPassword,AuthenticatableContract
      * @var array<int, string>
      */
     protected $table='accounts';
-    protected $fillabele=[
+    protected $fillable =[
 //write the coloumn of ur table here
          'name',
          'email',
