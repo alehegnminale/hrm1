@@ -89,9 +89,17 @@
     background-color: #e2e2e2;
 }
         .main-content {
-            margin-left: 250px; /* Space for the sidebar */
+            /* margin-left: 400px; Space for the sidebar */
             padding: 20px;
             padding-top: 80px; /* To avoid overlap with the header */
+            background-color: #ffffff; /* White background */
+           border-radius: 8px; /* Rounded corners */
+             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 10px; /* Padding around the content */
+            max-width: 600px; /* Max width for the form */
+           margin: 10px auto; /* Centering the content */
+            margin-left: 485px;
+            
         }
         @media (max-width: 768px) {
             .sidebar {
@@ -185,6 +193,78 @@
 .form-group:last-child {
     margin-right: 0; /* No margin on the last child */
 }
+.h3 {
+    color: blue;
+    margin-top: 0;
+    text-align: left;
+    font-size:20px;
+}
+/* Main content styles */
+  .main-content {
+  
+}
+
+/* Heading styles */
+.h3 {
+    color: #333; /* Dark gray text color */
+    margin-top: 50px; /* Space below the heading */
+    text-align: left; /* Center the heading */
+    color:blue;
+}
+
+/* Alert styles */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d4edda;
+    border-radius: 5px;
+    background-color: #d4edda; /* Light green background for success alerts */
+    color: #155724; /* Dark green text color */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 0; /* Space between form groups */
+}
+
+/* Label styles */
+label {
+    font-weight: bold; /* Bold labels */
+    display: block; /* Display labels as block */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+/* Input and textarea styles */
+/* .form-control {
+    width: 100%; /* Full width */
+    /* padding: 10px; Padding inside inputs */
+    /* border: 1px solid #ced4da; Light gray border */
+    /* border-radius: 4px; Rounded corners */
+    /* transition: border-color 0.3s; Smooth transition for focus */
+/* } */ 
+
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.btn1 {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding around the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+    margin-left:40px;
+}
+
+.btn1:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
     </style>
 </head>
 <body>
@@ -391,7 +471,7 @@ function closeDropdown() {
 
         <!-- Main Content -->
         <!-- Main Content -->
-<main class="main-content">
+<main class="main-content bg-white shadow">
     <div class="container">
         @if(session()->has("status"))
             <div class="alert alert-status">
@@ -404,7 +484,7 @@ function closeDropdown() {
             </div>
         @endif 
 
-        <h1>Edit Profile</h1>
+        <h1 class="h3"> <i class="fas fa-user-edit"></i> Edit Profile</h1>
 
         @if(session('error'))
     <div class="alert alert-danger">{{ session('error') }}</div>
@@ -506,7 +586,7 @@ function closeDropdown() {
             <span class="text-danger">{{ $errors->first('photo') }}</span>
         @endif
     </div>
-    <button type="submit" class="btn btn-primary">Update Profile</button>
+    <button type="submit" class="btn1 btn-primary">Update Profile</button>
 </form>
 
 

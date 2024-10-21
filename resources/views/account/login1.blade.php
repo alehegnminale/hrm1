@@ -79,7 +79,7 @@
         width: 20;   
         padding: 10px 0px;  
         margin: 10px 5px auto; 
-        color :  #BF00B0 ;
+        color :  blue ;
         text-align:auto;
         height:0;
         font-sizeof:15;
@@ -221,13 +221,21 @@ footer {
     color: white;
 }
 .feature {
-    background: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: left;
+    background: #f8f9fa; /* Light gray background */
+    border: 3px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 300px; /* Fixed width */
+    text-align: left; /* Left-aligned text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: auto; /* Center the form */
+    transition: box-shadow 0.3s; /* Smooth transition on hover */
 }
+
+.feature:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
  .alart-status{
     color :red;
 
@@ -266,7 +274,12 @@ color: red;
       front: size 12px;
 
      }
- 
+     label {
+    font-weight: bold;
+    /* display: block; */
+     margin-bottom: 5px; 
+}
+
     </style>
 <head>
     <meta charset="UTF-8">
@@ -311,8 +324,8 @@ color: red;
             <form class="f1" method="post" action="{{url('/account/signin')}}">  
         @csrf
         @method("post") 
-        <div class="feature ">
-           <h4 class="h4">  Sign in </h4>
+        <div class="feature bg-white shadow">
+           <h4 class="h4"> <i class="fas fa-sign-in-alt"></i> Sign in </h4>
           <h3 class="h2">  Enter your email and password to login </h3>
           <div>
             <label>Email </label>   
@@ -333,7 +346,7 @@ color: red;
           @endif
           <div>
         <input type="checkbox" name="remember" id="remember">
-        <label for="remember">Remember Me</label>
+        <label class ="lab" for="remember">Remember Me</label>
     </div>
             </div>
            <a  href="{{ url('/forgot-password') }}"> Forgot password? </a>   

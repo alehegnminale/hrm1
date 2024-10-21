@@ -93,6 +93,9 @@
             margin-left: 250px; /* Space for the sidebar */
             padding: 20px;
             padding-top: 80px; /* To avoid overlap with the header */
+            margin-top:20px;
+            margin-left:480px;
+            border: 1px solid #ccc;
         }
         @media (max-width: 768px) {
             .sidebar {
@@ -170,6 +173,48 @@
     border: 1px solid #ccc;
     z-index: 1;
 }
+.h3 {
+    color: blue;
+    margin-top: 0;
+    text-align: center;
+    font-size:20px;
+}
+.btn1 {
+    background-color: #007bff;
+    color: white;
+    border: 1px;
+    margin-left: 25px;
+    margin-top:5px;
+    padding: 10px 15px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    border: 3px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.input-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.input-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
     </style>
 </head>
 <body>
@@ -374,9 +419,9 @@ function closeDropdown() {
 </script>
 
         <!-- Main Content -->
-        <main class="main-content">
+        <main class="main-content bg-white shadow">
         <div class="container">
-    <h1> Vacancy Announcement</h1>
+    <h1 class ="h3"> <i class="fas fa-clipboard-list"></i>Vacancy Announcement</h1>
 
     @if(session('status'))
         <div class="alert alert-success">{{ session('status') }}</div>
@@ -386,27 +431,27 @@ function closeDropdown() {
         @csrf
         <div class="form-group">
             <label for="job_title">Job Title</label>
-            <input type="text" id="job_title" name="job_title" class="form-control" required>
+            <input type="text" id="job_title" name="job_title" placeholder="Job Title" class="form-control" required>
         </div>
 
         <div class="form-group">
             <label for="job_description">Job Description</label>
-            <textarea id="job_description" name="job_description" class="form-control" required></textarea>
+            <textarea id="job_description" name="job_description" placeholder="Job Description" class="form-control" required></textarea>
         </div>
 
         <div class="form-group">
             <label for="company_name">Company Name</label>
-            <input type="text" id="company_name" name="company_name" class="form-control" required>
+            <input type="text" id="company_name"placeholder="Company Name" name="company_name" class="form-control" required>
         </div>
 
         <div class="form-group">
             <label for="location">Location</label>
-            <input type="text" id="location" name="location" class="form-control" required>
+            <input type="text" id="location" placeholder="location" name="location" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="salary_range">Salary Range</label>
-            <input type="text" id="salary_range" name="salary_range" class="form-control">
+            <label for="salary_range">Salary </label>
+            <input type="text" id="salary_range" placeholder="Salary"name="salary_range" class="form-control">
         </div>
 
         <div class="form-group">
@@ -414,7 +459,7 @@ function closeDropdown() {
             <input type="date" id="application_deadline" name="application_deadline" class="form-control" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn1 btn-primary">Submit</button>
     </form>
 </div>
         </main>

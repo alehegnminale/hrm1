@@ -179,16 +179,23 @@ footer {
 }
 h4{
     font-size: 14px;
-    color:red;
+    color:blue;
 
 }
 .feature {
-    background: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    text-align: left;
+    background: #f8f9fa; /* Light gray background */
+    border: 3px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    width: 300px; /* Fixed width */
+    text-align: left; /* Left-aligned text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: auto; /* Center the form */
+    transition: box-shadow 0.3s; /* Smooth transition on hover */
+}
+
+.feature:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 .input-container {
             position: relative;
@@ -229,6 +236,11 @@ h4{
     
          
     }  
+    label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
 </style>  
 
     <meta charset="UTF-8">
@@ -277,8 +289,8 @@ h4{
             {{session()->get("error")}}
         @endif 
 </div>
-         <div class="feature">
-         <h4 > Create Account</h4>
+         <div class="feature bg-white shadow">
+         <h4><i class="fas fa-user-plus"></i> Create Account</h4>
             <label>Name </label>   
             <input type="text" placeholder="Enter ur name" name="name" required> 
             @if ($errors->has('name'))
