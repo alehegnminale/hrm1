@@ -5,7 +5,7 @@
         "build": "vite build",
          "test": "jest"
     },
- "author": "Your Name",
+ "author": "Alehegn Minale",
     "license": "ISC",
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",

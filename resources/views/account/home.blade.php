@@ -85,22 +85,26 @@ header {
 .features {
     padding: 40px;
     text-align: center;
+  
 }
 
 .feature-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
+    
 }
 
 .feature-card {
     background: #f8f9fa;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc; /* You can choose to keep or remove this */
     border-radius: 8px;
     padding: 20px;
     width: 200px;
     text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add this line for shadow */
 }
+
 
 .feature-card i {
     font-size: 2em;
@@ -154,29 +158,29 @@ footer {
         
         </section>
 
-        <section class="features">
+        <section class="features ">
         <a href="{{ url('/features') }}" class="btn">Get Started</a>
             <h2>Our Features</h2>
-            <div class="feature-cards">
-                <div class="feature-card">
+            <div class="feature-cards ">
+                <div class="feature-card bg-white shadow">
                     <i class="fas fa-bolt"></i>
                     <h3>Feature One</h3>
                     <p>Welcome to our Human Resource Management (HRM) platform,</li>
                      where we prioritize the seamless integration of people and processes.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card bg-white shadow">
                     <i class="fas fa-cogs"></i>
                     <h3>Feature Two</h3>
                     <p>Our innovative solutions empower organizations to optimize workforce management,</li> 
                     enhance employee engagement, and streamline recruitment.</p>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-shield-alt"></i>
+                <div class="feature-card bg-white shadow">
+                    <i class="fas fa-shield-alt"bg-white shadow></i>
                     <h3>Feature Three</h3>
                     <p>With user-friendly tools and data-driven insights, 
                         we help you cultivate a thriving workplace culture while ensuring compliance and efficiency. </p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card bg-white shadow">
                     <i class="fas fa-shield"></i>
                     <h3>Feature Four</h3>
                     <p>Join us on the journey to transform your HR practices and unlock your team's full potential!</p>

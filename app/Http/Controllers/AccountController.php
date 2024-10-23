@@ -16,6 +16,13 @@ use Illuminate\foundation\Auth\Passwords\SendsPasswordResetEmails;
 use Illuminate\Support\Str;
 use Illuminate\Foundation\Auth\Account as Authenticatable;
 use Illuminate\Support\Facades\Log;
+// use App\Http\Controllers\AccountController;
+
+//   use App\Http\Controllers\AboutController;
+//   use App\Http\Controllers\ContactController;
+//   use App\Http\Controllers\PasswordController;
+//   use App\Http\Controllers\ProfileController;
+//   use App\Http\Controllers\VacancyController;
 class AccountController extends Controller
 {
  // use SendsPasswordResetEmails, ResetsPasswords;

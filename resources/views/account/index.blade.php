@@ -169,6 +169,24 @@
     border: 1px solid #ccc;
     z-index: 1;
 }
+.card {
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #fff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .shadow-lg {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .transition-transform {
+            transition: transform 0.2s ease;
+        }
     </style>
 </head>
 <body>
@@ -373,25 +391,25 @@ function closeDropdown() {
 </script>
 
         <!-- Main Content -->
-        <main class="main-content">
-            <h1 class="text-2xl font-bold mt-5">Welcome to the Dashboard!</h1>
+        <main class="main-content mt-4">
+            <h1 class="h3">  <i class="fas fa-tachometer-alt mr-2"></i>Welcome to the Dashboard!</h1>
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <div class="card p-3 mb-4">
+                    <div class="card p-3 mb-4 bg-white shadow">
                         <h5 class="card-title">Card Title 1</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-3 mb-4">
+                    <div class="card p-3 mb-4 bg-white shadow" >
                         <h5 class="card-title">Card Title 2</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-3 mb-4">
+                    <div class="card p-3 mb-4 bg-white shadow">
                         <h5 class="card-title">Card Title 3</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>

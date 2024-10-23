@@ -95,12 +95,14 @@ header {
 
 .feature-card {
     background: #f8f9fa;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc; /* You can choose to keep or remove this */
     border-radius: 8px;
     padding: 20px;
-    width: 200px;
+    width: 210px;
     text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add this line for shadow */
 }
+
 
 .feature-card i {
     font-size: 2em;
@@ -121,6 +123,7 @@ footer {
     width: 250px;
     text-align: left;
     height: 85px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add this line for shadow */
 }
  .alart-status{
     color :red;

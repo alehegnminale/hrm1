@@ -94,11 +94,11 @@
 
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 8px;
             background: #002147;
             color: white;
             position: relative;
-            margin-top: 125px; 
+            margin-top: 470px; 
             /* width: 100%; */
         }
 
@@ -182,17 +182,7 @@
             background: #218838;
         }
 
-        .vacancy-card {
-        padding: 15px;
-        border-radius: 10px;
-        background-color: #fff;
-        margin: 20px auto; /* Center the card */
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s;
-        overflow: hidden; /* Prevent overflow */
-        max-width: 90%; /* Set a maximum width */
-    }
+        
 
     .vacancy-description {
         display: none; /* Initially hidden */

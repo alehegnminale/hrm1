@@ -160,12 +160,15 @@ header {
 
 .feature-card {
     background: #f8f9fa;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc; /* You can choose to keep or remove this */
     border-radius: 8px;
     padding: 20px;
-    width: 200px;
+    width: 190px;
+    height: 290px;
     text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add this line for shadow */
 }
+
 
 .feature-card i {
     font-size: 2em;
@@ -354,7 +357,11 @@ h4{
                     <p>With user-friendly tools and data-driven insights, 
                         we help you cultivate a thriving workplace culture while ensuring compliance and efficiency. </p>
                 </div>
-                
+                <div class="feature-card">
+                    <i class="fas fa-shield"></i>
+                    <h2>Feature Four</h2>
+                    <p>Join us on the journey to transform your HR practices and unlock your team's full potential!</p>
+                </div>
             </div>
         </section>
     </main>

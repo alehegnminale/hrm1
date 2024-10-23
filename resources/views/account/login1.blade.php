@@ -199,19 +199,21 @@ h2{
     justify-content: right;
     gap: 20px;
 }
-
 .feature-card {
     background: #f8f9fa;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc; /* You can choose to keep or remove this */
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     width: 180px;
     text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add this line for shadow */
 }
+
 
 .feature-card i {
     font-size: 2em;
     color: #007bff;
+    height: 10px;
 }
 
 footer {

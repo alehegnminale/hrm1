@@ -101,12 +101,14 @@ header {
 
 .feature-card {
     background: #f8f9fa;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 8px;
     padding: 20px;
     width: 200px;
     text-align: left;
-    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add this line for shadow */
+}
+
 }
 
 .feature-card i {
@@ -176,8 +178,8 @@ color: red;
     </header>
 
     <main>
-    <section class="hero">
-     <div class="feature">
+    <section class="hero ">
+     <div class="feature bg-white shadow">
      
      <h2>Reset Password</h2>
     @if (session('status'))
@@ -203,7 +205,7 @@ color: red;
          </section>
         
         
-        <section class="features">
+         <section class="features">
         <a href="{{ url('/features') }}" class="btn">Get Started</a>
             <h2>Our Features</h2>
             <div class="feature-cards">
@@ -225,10 +227,13 @@ color: red;
                     <p>With user-friendly tools and data-driven insights, 
                         we help you cultivate a thriving workplace culture while ensuring compliance and efficiency. </p>
                 </div>
-                
+                <div class="feature-card">
+                    <i class="fas fa-shield"></i>
+                    <h3>Feature Four</h3>
+                    <p>Join us on the journey to transform your HR practices and unlock your team's full potential!</p>
+                </div>
             </div>
         </section>
-               
     </main>
 
     <footer>
